@@ -10423,25 +10423,7 @@ header {
     background-color: #6E9BCA; }
 
 .services {
-  margin-top: 90px;
-  text-align: center; }
-  .services > h2, .services > .h2 {
-    overflow: hidden;
-    font-weight: bold;
-    position: relative;
-    text-transform: uppercase; }
-    .services > h2 > span, .services > .h2 > span {
-      display: inline-block; }
-      .services > h2 > span:before, .services > .h2 > span:before, .services > h2 > span:after, .services > .h2 > span:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        border-top: 1px solid #cccccc;
-        margin-top: .6em; }
-      .services > h2 > span:before, .services > .h2 > span:before {
-        margin-left: -101.5%; }
-      .services > h2 > span:after, .services > .h2 > span:after {
-        margin-left: 1.5%; }
+  margin-top: 90px; }
   .services .view-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10467,5 +10449,41 @@ header {
           color: white;
           text-decoration: none; }
 
+.projects {
+  margin-top: 112px; }
+  .projects > h2, .projects > .h2 {
+    font-size: 26px; }
+  .projects .view-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 88px;
+    gap: 30px; }
+    .projects .view-content .views-field-title {
+      font-size: 24px;
+      margin-top: 31px;
+      font-weight: bold;
+      text-transform: uppercase; }
+
 html, body {
   font-family: 'Open Sans', sans-serif; }
+
+.views-element-container {
+  text-align: center; }
+  .views-element-container > h2, .views-element-container > .h2 {
+    overflow: hidden;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase; }
+    .views-element-container > h2 > span, .views-element-container > .h2 > span {
+      display: inline-block; }
+      .views-element-container > h2 > span:before, .views-element-container > .h2 > span:before, .views-element-container > h2 > span:after, .views-element-container > .h2 > span:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid #cccccc;
+        margin-top: .6em; }
+      .views-element-container > h2 > span:before, .views-element-container > .h2 > span:before {
+        margin-left: -101.5%; }
+      .views-element-container > h2 > span:after, .views-element-container > .h2 > span:after {
+        margin-left: 1.5%; }

@@ -1,0 +1,23 @@
+.projects {
+  margin-top: 112px;
+
+  > h2 {
+    font-size: 26px;
+  }
+
+  .view-content {
+    display: flex;
+    margin-top: 88px;
+    gap: 30px;
+
+    .views-field {
+      &-title {
+        font-size: 24px;
+        margin-top: 31px;
+        //margin: 10px 0 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

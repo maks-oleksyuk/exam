@@ -13,7 +13,40 @@
 @import "header";
 @import "about";
 @import "services";
+@import "projects";
 
 html, body {
   font-family: 'Open Sans', sans-serif;
+}
+
+.views-element-container {
+  text-align: center;
+
+  > h2 {
+    overflow: hidden;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+
+    > span {
+      display: inline-block;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid $base-light-gray-color;
+        margin-top: .6em;
+      }
+
+      &:before {
+        margin-left: -101.5%;
+      }
+
+      &:after {
+        margin-left: 1.5%;
+      }
+    }
+  }
 }
