@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  padding: 12px 0;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 5px solid $base-dark-color;
+  border-bottom: 5px solid $base-cyan-color;
+
+  p {
+    margin: 0;
+  }
+
+  p:first-child {
+    padding: 0 4px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: $base-dark-color;
+  }
+
+  p:nth-child(2) {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $base-gray-color;
+    text-transform: uppercase;
+  }
+
+  > a {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $base-cyan-color;
+  }
+}

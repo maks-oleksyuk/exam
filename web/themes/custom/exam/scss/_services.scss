@@ -1,0 +1,70 @@
+.services {
+  margin-top: 90px;
+  text-align: center;
+
+  > h2 {
+    overflow: hidden;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+
+    > span {
+      display: inline-block;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid $base-light-gray-color;
+        margin-top: .6em;
+      }
+
+      &:before {
+        margin-left: -101.5%;
+      }
+
+      &:after {
+        margin-left: 1.5%;
+      }
+    }
+  }
+
+  .view-content {
+    display: flex;
+    margin-top: 93px;
+    gap: 30px;
+
+    .views-field {
+      &-field-media-image {
+        height: 140px;
+      }
+
+      &-title {
+        font-size: 21px;
+        margin: 10px 0 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      &-body {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      &-view-node {
+        margin-top: 25px;
+
+        > span {
+          padding: 3px 5px;
+          background-color: $base-cyan-color;
+
+          > a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+@import "variables";
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+@import "fonts";
+@import "header";
+@import "about";
+@import "services";
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
