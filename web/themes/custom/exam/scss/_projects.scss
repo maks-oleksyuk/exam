@@ -1,15 +1,8 @@
-.view-projects-view{
-  background: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 10px,
-      #ccc 12px,
-      #ccc 12px
-  );
-}
-
-.views-row{
-  background-color: white;
+.view-projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects {
@@ -20,58 +13,76 @@
     margin-bottom: 20px;
   }
 
-  .view-content {
-    display: flex;
-    padding-top: 68px;
-    gap: 30px;
+  .view-projects {
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 10px,
+        #ccc 12px,
+        #ccc 12px
+    );
 
-    .views-field {
+    .view-content {
+      display: flex;
+      padding-top: 68px;
 
-      &-field-project-media-image{
-        width: 290px;
-        height: 290px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      &-title {
-        font-size: 24px;
-        margin: 31px 0 2px;
+      .views-row {
+        text-align: center;
+        background-color: white;
         text-transform: uppercase;
-        a{
-          text-decoration: none;
-          color: $base-dark-color;
-        }
-      }
 
-      &-field-project-taxonomy{
-        text-transform: uppercase;
-      }
+        .views-field {
+          &-field-media-image {
+            width: 290px;
+            height: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 
-      &-view-node {
-        padding: 19px 0 15px;
-        border-bottom: 1px solid $base-dark-color;
+          &-title {
+            font-size: 24px;
+            margin: 31px 0 2px;
 
-        > span {
-          padding: 3px 5px;
-          background-color: $base-dark-color;
+            a {
+              text-decoration: none;
+              color: $base-dark-color;
+            }
+          }
 
-          > a {
-            color: white;
-            text-decoration: none;
+          &-field-service-term {
+          }
+
+          &-view-node {
+            padding: 19px 0 15px;
+            border-bottom: 1px solid $base-dark-color;
+
+            > span {
+              padding: 4px 8px;
+              background-color: $base-dark-color;
+
+              &:hover {
+                background-color: $base-cyan-color;
+              }
+
+              > a {
+                color: white;
+                text-decoration: none;
+              }
+            }
           }
         }
       }
     }
   }
 
-  .pagination{
+  .pagination {
     gap: 3px;
     font-size: 12px;
     margin: 0;
-    padding: 46px  0 155px;
-    .page-link{
+    padding: 46px 0 155px;
+
+    .page-link {
       padding: 6px 12px;
       color: $base-dark-color;
       border-radius: 50%;
@@ -79,8 +90,8 @@
       background-color: transparent;
     }
 
-    .page-item.active{
-      a{
+    .page-item.active {
+      a {
         background-color: #DDDCDD;
       }
     }

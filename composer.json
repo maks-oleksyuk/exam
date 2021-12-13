@@ -8,12 +8,16 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
@@ -44,9 +48,9 @@
         "enable-patching": true,
         "patches": {
             "drupal/views_style_swiper": {
-               "Fix YAML": "web/modules/patches/views_style_swiper.patch"
-             }
-         },
+                "Fix YAML": "web/modules/patches/views_style_swiper.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

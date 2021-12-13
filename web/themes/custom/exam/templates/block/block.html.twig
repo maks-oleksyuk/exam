@@ -6,7 +6,7 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}><span>{{ label }}</span></h2>
+    <h2 class="container" {{ title_attributes }}><span>{{ label }}</span></h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}

@@ -10429,84 +10429,111 @@ header {
 
 .services {
   margin-top: 92px; }
-  .services .view-content {
+  .services > h2, .services > .h2 {
+    margin-bottom: 92px; }
+  .services .swiper-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .services .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 93px;
-    gap: 30px; }
-    .services .view-content .views-field-field-media-image {
+    max-width: 300px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-transform: uppercase; }
+    .services .swiper-slide .views-field-field-media-image {
       height: 140px; }
-    .services .view-content .views-field-title {
+    .services .swiper-slide .views-field-title {
       font-size: 21px;
-      margin: 10px 0 7px;
-      font-weight: bold;
-      text-transform: uppercase; }
-    .services .view-content .views-field-body {
+      margin: 10px 0 8px;
+      font-weight: bold; }
+    .services .swiper-slide .views-field-body {
       font-size: 12px;
-      text-transform: uppercase; }
-    .services .view-content .views-field-view-node {
-      margin-top: 25px; }
-      .services .view-content .views-field-view-node > span {
-        padding: 3px 5px;
+      text-align: center; }
+    .services .swiper-slide .views-field-view-node {
+      margin-top: 24px; }
+      .services .swiper-slide .views-field-view-node > span {
+        padding: 3px 6px;
         background-color: #6E9BCA; }
-        .services .view-content .views-field-view-node > span > a {
+        .services .swiper-slide .views-field-view-node > span:hover {
+          background-color: #333333; }
+        .services .swiper-slide .views-field-view-node > span > a {
           color: white;
           text-decoration: none; }
 
-.view-projects-view {
-  background: -o-repeating-linear-gradient(135deg, transparent, transparent 10px, #ccc 12px, #ccc 12px);
-  background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #ccc 12px, #ccc 12px); }
-
-.views-row {
-  background-color: white; }
+.view-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .projects {
   margin-top: 112px; }
   .projects > h2, .projects > .h2 {
     font-size: 26px;
     margin-bottom: 20px; }
-  .projects .view-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 68px;
-    gap: 30px; }
-    .projects .view-content .views-field-field-project-media-image {
-      width: 290px;
-      height: 290px;
+  .projects .view-projects {
+    background: -o-repeating-linear-gradient(135deg, transparent, transparent 10px, #ccc 12px, #ccc 12px);
+    background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #ccc 12px, #ccc 12px); }
+    .projects .view-projects .view-content {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-    .projects .view-content .views-field-title {
-      font-size: 24px;
-      margin: 31px 0 2px;
-      text-transform: uppercase; }
-      .projects .view-content .views-field-title a {
-        text-decoration: none;
-        color: #333333; }
-    .projects .view-content .views-field-field-project-taxonomy {
-      text-transform: uppercase; }
-    .projects .view-content .views-field-view-node {
-      padding: 19px 0 15px;
-      border-bottom: 1px solid #333333; }
-      .projects .view-content .views-field-view-node > span {
-        padding: 3px 5px;
-        background-color: #333333; }
-        .projects .view-content .views-field-view-node > span > a {
-          color: white;
-          text-decoration: none; }
+      padding-top: 68px; }
+      .projects .view-projects .view-content .views-row {
+        text-align: center;
+        background-color: white;
+        text-transform: uppercase; }
+        .projects .view-projects .view-content .views-row .views-field-field-media-image {
+          width: 290px;
+          height: 290px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+        .projects .view-projects .view-content .views-row .views-field-title {
+          font-size: 24px;
+          margin: 31px 0 2px; }
+          .projects .view-projects .view-content .views-row .views-field-title a {
+            text-decoration: none;
+            color: #333333; }
+        .projects .view-projects .view-content .views-row .views-field-view-node {
+          padding: 19px 0 15px;
+          border-bottom: 1px solid #333333; }
+          .projects .view-projects .view-content .views-row .views-field-view-node > span {
+            padding: 4px 8px;
+            background-color: #333333; }
+            .projects .view-projects .view-content .views-row .views-field-view-node > span:hover {
+              background-color: #6E9BCA; }
+            .projects .view-projects .view-content .views-row .views-field-view-node > span > a {
+              color: white;
+              text-decoration: none; }
   .projects .pagination {
     gap: 3px;
     font-size: 12px;
     margin: 0;
-    padding: 46px  0 155px; }
+    padding: 46px 0 155px; }
     .projects .pagination .page-link {
       padding: 6px 12px;
       color: #333333;

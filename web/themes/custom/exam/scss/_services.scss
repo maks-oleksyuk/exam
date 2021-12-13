@@ -1,38 +1,53 @@
 .services {
   margin-top: 92px;
 
-  .view-content {
-    display: flex;
-    margin-top: 93px;
-    gap: 30px;
+  > h2 {
+    margin-bottom: 92px;
+  }
 
-    .views-field {
-      &-field-media-image {
-        height: 140px;
-      }
+  .swiper {
+    &-wrapper {
+      justify-content: space-between;
+    }
 
-      &-title {
-        font-size: 21px;
-        margin: 10px 0 7px;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
+    &-slide {
+      display: flex;
+      max-width: 300px;
+      align-items: center;
+      flex-direction: column;
+      text-transform: uppercase;
 
-      &-body {
-        font-size: 12px;
-        text-transform: uppercase;
-      }
+      .views-field {
+        &-field-media-image {
+          height: 140px;
+        }
 
-      &-view-node {
-        margin-top: 25px;
+        &-title {
+          font-size: 21px;
+          margin: 10px 0 8px;
+          font-weight: bold;
+        }
 
-        > span {
-          padding: 3px 5px;
-          background-color: $base-cyan-color;
+        &-body {
+          font-size: 12px;
+          text-align: center;
+        }
 
-          > a {
-            color: white;
-            text-decoration: none;
+        &-view-node {
+          margin-top: 24px;
+
+          > span {
+            padding: 3px 6px;
+            background-color: $base-cyan-color;
+
+            &:hover {
+              background-color: $base-dark-color;
+            }
+
+            > a {
+              color: white;
+              text-decoration: none;
+            }
           }
         }
       }
