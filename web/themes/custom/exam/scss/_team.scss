@@ -1,0 +1,88 @@
+.team{
+  margin-top: 90px;
+
+  .view{
+    &-content{
+      gap: 30px;
+      display: flex;
+      padding-top: 25px;
+    }
+    .flag{
+      margin-top: -25px;
+      display: flex;
+      justify-content: end;
+      padding-right: 50px;
+      a{
+        width: 20px;
+        color: transparent;
+        text-decoration: none;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &.action{
+        &-flag{
+          >a {
+            background-image: url("https://img.icons8.com/material-outlined/20/D3D3D3/filled-like.png");
+          }
+        }
+        &-unflag{
+          >a {
+            background-image: url("https://img.icons8.com/fluency-systems-filled/20/6e9bca/filled-like.png");
+          }
+        }
+      }
+    }
+  }
+
+  .views{
+    &-field{
+      &-title{
+        font-size: 25px;
+        padding-top: 30px;
+        text-transform: uppercase;
+        color: $base-dark-color;
+      }
+      &-field-position{
+        margin-top: -8px;
+        font-size: 14px;
+        color: #D3D3D3;
+      }
+      &-view-node {
+        padding: 18px 0 23px;
+
+        > span {
+          padding: 4px 3px;
+          background-color: $base-dark-color;
+
+          > a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      &-field-employee-link{
+        padding-left: 44px;
+        .social-media-links--platforms {
+          display: flex;
+          font-size: 9px;
+          gap: 11px;
+          margin: 0;
+
+          > li {
+            width: 25px;
+            height: 25px;
+            background-color: #6E9BCA;
+
+            &:hover{
+              background-color: $base-dark-color;
+            }
+
+            > a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="block-news__wrapper">
+  <div class="block-news__date">
+    {% set created = date(fields.created.content.raw) %}
+    <div class="block-news__month">{{ created | date("M") }}</div>
+    <div class="block-news__day">{{ created | date("d") }}</div>
+    <div class="block-news__year">{{ created | date("Y") }}</div>
+  </div>
+  <div class="block-news__author d-flex justify-content-between">
+      <div>
+        {{ fields.user-picture.content }}
+        <span class="align-top">
+          <span class="text-gray">WRITER</span>
+          <span class="block-news__name">{{ fields.field_first_name.content }} {{ fields.field_last_name.content }} / </span>
+          <span class="text-primary">{{ fields.field_position.content }}</span>
+        </span>
+      </div>
+      <div class="block-news__ago">{{ fields.created_3.content }}</div>
+  </div>
+  <div class="block-news__content">
+    <h2>{{ fields.title.content }}</h2>
+    <p>{{ fields.body.content }}</p>
+    <div class="block-news__link">{{ fields.view_node.content }}</div>
+  </div>
+</div>

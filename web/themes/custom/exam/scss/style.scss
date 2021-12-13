@@ -14,18 +14,19 @@
 @import "about";
 @import "services";
 @import "projects";
+@import "team";
 
 html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
 .views-element-container {
-  text-align: center;
 
   > h2 {
     overflow: hidden;
     font-weight: bold;
     position: relative;
+    text-align: center;
     text-transform: uppercase;
 
     > span {

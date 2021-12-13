@@ -1,4 +1,8 @@
 global-styling:
+  js:
+    js/swiper.js: {}
+    js/swiper.min.js: {}
   css:
     theme:
       css/style.css: {}
+      
