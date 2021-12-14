@@ -1,9 +1,9 @@
 <div class="block-news__wrapper">
   <div class="block-news__date">
-    {% set created = date(fields.created.content.raw) %}
-    <div class="block-news__month">{{ created_1 | date("M") }}</div>
-    <div class="block-news__day">{{ created_1 | date("d") }}</div>
-    <div class="block-news__year">{{ created_1 | date("Y") }}</div>
+    {% set created = date(fields.created.content_1.raw) %}
+    <div class="block-news__month">{{ created | date("M") }}</div>
+    <div class="block-news__day">{{ created | date("d") }}</div>
+    <div class="block-news__year">{{ created | date("Y") }}</div>
   </div>
   <div class="block-news__author d-flex justify-content-between">
     <div>
@@ -18,7 +18,7 @@
     <div class="block-news__ago">{{ fields.created.content }}</div>
   </div>
   <div class="block-news__content">
-    <h2>{{ fields.title.content }}</h2>
+    <h2>{{ fields.title_1.content }}</h2>
     <p>{{ fields.body.content }}</p>
     <div class="block-news__link">{{ fields.view_node.content }}</div>
   </div>

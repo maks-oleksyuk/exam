@@ -15,13 +15,13 @@
 @import "services";
 @import "projects";
 @import "team";
+@import "news";
 
 html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
 .views-element-container {
-
   > h2 {
     overflow: hidden;
     font-weight: bold;

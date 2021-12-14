@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .view-projects {
   display: flex;
   align-items: center;
@@ -23,18 +25,24 @@
     );
 
     .view-content {
+      gap: 30px;
       display: flex;
-      padding-top: 68px;
+      padding: 68px 0 0;
+      justify-content: center;
 
       .views-row {
+        padding: 0;
+        max-width: 290px;
+        display: flex;
         text-align: center;
+        flex-direction: column;
         background-color: white;
         text-transform: uppercase;
+        border-bottom: 1px solid $base-dark-color;
 
         .views-field {
           &-field-media-image {
-            width: 290px;
-            height: 290px;
+            flex-grow: 1;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,11 +59,25 @@
           }
 
           &-field-service-term {
+            .web-development {
+              color: map-get($terms-color, "web");
+            }
+
+            .php-development {
+              color: map-get($terms-color, "php");
+            }
+
+            .app-development {
+              color: map-get($terms-color, "app");
+            }
+
+            .drupal-project {
+              color: map-get($terms-color, "drupal");
+            }
           }
 
           &-view-node {
             padding: 19px 0 15px;
-            border-bottom: 1px solid $base-dark-color;
 
             > span {
               padding: 4px 8px;

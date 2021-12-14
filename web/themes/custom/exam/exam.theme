@@ -5,6 +5,8 @@
  * exam theme file.
  */
 
+use Drupal\flag\FlagInterface;
+
 /**
  * Implements hook_form_FORM_ID_alter().
  */
