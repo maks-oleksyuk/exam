@@ -9,3 +9,11 @@ footer {
   }
 }
 
+@include media-breakpoint-down(sm) {
+  footer {
+    .region-footer {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

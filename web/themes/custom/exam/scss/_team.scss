@@ -41,15 +41,17 @@
           padding: 18px 0 23px;
 
           > span {
-            padding: 4px 3px;
+            padding: 3px 10px 5px;
             background-color: $base-dark-color;
 
             &:hover {
               background-color: $base-cyan-color;
+              box-shadow: 0px 0px 5px 1px $base-dark-color;
             }
 
             > a {
               color: white;
+              font-size: 14px;
               text-decoration: none;
             }
           }
@@ -61,27 +63,7 @@
         display: flex;
         padding-inline: 45px;
         justify-content: space-between;
-
-        .social-media-links--platforms {
-          display: flex;
-          font-size: 9px;
-          gap: 11px;
-          margin: 0;
-
-          > li {
-            width: 25px;
-            height: 25px;
-            background-color: #6E9BCA;
-
-            &:hover {
-              background-color: $base-dark-color;
-            }
-
-            > a {
-              color: #fff;
-            }
-          }
-        }
+        @extend %social_link;
 
         .flag {
           display: flex;

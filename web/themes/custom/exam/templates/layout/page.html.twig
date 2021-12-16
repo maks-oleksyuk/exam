@@ -42,7 +42,7 @@
  * @see html.html.twig
  */
 #}
-{% set nav_classes = 'navbar navbar-expand-lg' ~
+{% set nav_classes = 'navbar navbar-expand-xl' ~
   (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
   (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
   (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ') %}
@@ -76,19 +76,21 @@
 
 </header>
 
-<main role="main">
-  <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+{% block content %}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-  <div class="{{ b5_top_container }}">
-    {% if page.breadcrumb %}
-      {{ page.breadcrumb }}
-    {% endif %}
-    <div>
-      {{ page.content }}
+    <div class="{{ b5_top_container }}">
+      {% if page.breadcrumb %}
+        {{ page.breadcrumb }}
+      {% endif %}
+      <div>
+        {{ page.content }}
+      </div>
     </div>
-  </div>
 
-</main>
+  </main>
+{% endblock %}
 
 {% if page.footer %}
   <footer class="mt-auto {{ footer_classes }}">
