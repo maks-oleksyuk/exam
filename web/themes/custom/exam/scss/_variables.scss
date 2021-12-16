@@ -15,5 +15,51 @@ $terms-color: (
   php: #9B58B5,
   app: #E84C3D,
   drupal: #32ADE1
-)
+);
+%social_link {
+  .block-social-media-links-block {
+    display: flex;
+    align-items: center;
 
+    .social-media-links--platforms {
+      display: flex;
+      font-size: 9px;
+      gap: 11px;
+      margin: 0;
+
+      > li {
+        width: 25px;
+        height: 25px;
+        background-color: $base-cyan-color;
+
+        > a {
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: $base-dark-color;
+        }
+      }
+    }
+  }
+}
+
+%site_branding {
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+
+    a.site-title {
+      font-size: 28px;
+      font-family: "Nexa Slab";
+      text-transform: capitalize;
+      color: #6e9bca;
+    }
+
+    .site-slogan {
+      margin-top: -11px;
+      font-size: 15px;
+      color: #cac9cd;
+    }
+  }
+}

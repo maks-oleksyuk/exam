@@ -1,3 +1,39 @@
+.navbar .region-nav-additional .block-social-media-links-block, footer .region-footer .block-social-media-links-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .navbar .region-nav-additional .block-social-media-links-block .social-media-links--platforms, footer .region-footer .block-social-media-links-block .social-media-links--platforms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 9px;
+    gap: 11px;
+    margin: 0; }
+    .navbar .region-nav-additional .block-social-media-links-block .social-media-links--platforms > li, footer .region-footer .block-social-media-links-block .social-media-links--platforms > li {
+      width: 25px;
+      height: 25px;
+      background-color: #6E9BCA; }
+      .navbar .region-nav-additional .block-social-media-links-block .social-media-links--platforms > li > a, footer .region-footer .block-social-media-links-block .social-media-links--platforms > li > a {
+        color: #fff; }
+      .navbar .region-nav-additional .block-social-media-links-block .social-media-links--platforms > li:hover, footer .region-footer .block-social-media-links-block .social-media-links--platforms > li:hover {
+        background-color: #333333; }
+
+.navbar .region-nav-branding .navbar-brand, footer .region-footer .navbar-brand {
+  margin: 0;
+  padding: 0; }
+  .navbar .region-nav-branding .navbar-brand a.site-title, footer .region-footer .navbar-brand a.site-title {
+    font-size: 28px;
+    font-family: "Nexa Slab";
+    text-transform: capitalize;
+    color: #6e9bca; }
+  .navbar .region-nav-branding .navbar-brand .site-slogan, footer .region-footer .navbar-brand .site-slogan {
+    margin-top: -11px;
+    font-size: 15px;
+    color: #cac9cd; }
+
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10251,26 +10287,27 @@ header {
     padding: 30px 38px;
     text-align: center;
     background-color: #333333; }
-    .navbar .region-nav-branding .navbar-brand {
-      margin: 0;
-      padding: 0; }
-      .navbar .region-nav-branding .navbar-brand a.site-title {
-        font-size: 28px;
-        font-family: "Nexa Slab";
-        text-transform: capitalize;
-        color: #6e9bca; }
-      .navbar .region-nav-branding .navbar-brand .site-slogan {
-        margin-top: -11px;
-        font-size: 15px;
-        color: #cac9cd; }
   .navbar .region-nav-main {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .navbar .region-nav-main > nav {
+    .navbar .region-nav-main .block-menu {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+    .navbar .region-nav-main > nav {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-transform: uppercase;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
     .navbar .region-nav-main .navbar-nav li:first-child a {
       -webkit-user-select: none;
          -moz-user-select: none;
@@ -10290,7 +10327,10 @@ header {
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .navbar .region-nav-main .nav-link:hover, .navbar .region-nav-main .media-library-view--widget .view-header a:hover, .media-library-view--widget .view-header .navbar .region-nav-main a:hover {
         color: #6E9BCA; }
     .navbar .region-nav-main .is-active {
@@ -10304,19 +10344,6 @@ header {
         -ms-flex-align: center;
             align-items: center;
     gap: 28px; }
-    .navbar .region-nav-additional .social-media-links--platforms {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 9px;
-      gap: 11px;
-      margin: 0; }
-      .navbar .region-nav-additional .social-media-links--platforms > li {
-        width: 25px;
-        height: 25px;
-        background-color: #6E9BCA; }
-        .navbar .region-nav-additional .social-media-links--platforms > li > a {
-          color: #fff; }
   .navbar #views-exposed-form-search-api-page-1 {
     padding-right: 30px; }
 
@@ -10380,6 +10407,19 @@ header {
     background-color: #6e9bca; }
   .progress-bar-warning {
     background-color: #333333; }
+
+@media (max-width: 767.98px) {
+  header {
+    min-height: auto; }
+  .header-banner {
+    padding: 0 40px;
+    margin-top: 80px; }
+    .header-banner__title-primary {
+      font-size: 44px; }
+    .header-banner__title-secondary {
+      font-size: 24px; }
+    .header-banner__text {
+      font-size: 13px; } }
 
 .block-about {
   display: -webkit-box;
@@ -10668,6 +10708,19 @@ header {
   margin-top: 192px; }
   .news > h2, .news > .h2 {
     margin-bottom: 25px; }
+  .news .view-content {
+    gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .news .view-content .views-row {
+      -ms-flex-preferred-size: 610px;
+          flex-basis: 610px; }
   .news .view-news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10682,9 +10735,11 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 77px;
     background: -o-repeating-linear-gradient(135deg, transparent, transparent 10px, #ccc 12px, #ccc 12px);
     background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #ccc 12px, #ccc 12px); }
   .news .view-filters .form--inline {
+    height: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10694,10 +10749,10 @@ header {
   .news .view-filters .form-item-title {
     margin: 0; }
   .news .view-filters .form-text {
-    width: 340px;
+    max-width: 340px;
+    border-radius: 0;
     border-block: 5px solid #F5F5F5;
-    border-inline: 2px solid #F5F5F5;
-    border-radius: 0; }
+    border-inline: 2px solid #F5F5F5; }
   .news .view-filters .form-submit {
     border-radius: 0;
     background-color: #67BFDC;
@@ -10705,19 +10760,91 @@ header {
     border-inline: 4px solid #F5F5F5; }
   .news .block-news__wrapper {
     display: grid;
+    padding: 10px 15px;
+    grid-row-gap: 12px;
+    grid-column-gap: 20px;
     background-color: white;
-    grid-template-columns: auto 1fr;
-    grig-row-gap: 20px;
-    grig-column-gap: 20px;
-    padding-inline: 20px; }
+    text-transform: uppercase;
+    grid-template-columns: auto 1fr; }
+  .news .block-news__date {
+    text-align: center; }
   .news .block-news__month {
     font-size: 24px;
-    text-transform: uppercase; }
+    color: #333333; }
   .news .block-news__day {
-    font-size: 45px;
-    line-height: 30px; }
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #6E9BCA; }
+  .news .block-news__year {
+    font-size: 16px;
+    color: #DADADA; }
+  .news .block-news__author {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-left: 18px;
+    border-left: 1px solid #DADADA; }
+    .news .block-news__author .text-gray {
+      color: #DADADA; }
+    .news .block-news__author .text-blue {
+      color: #6E9BCA; }
+  .news .block-news__name {
+    color: #333333; }
+  .news .block-news__ago {
+    padding-right: 20px;
+    color: #DADADA; }
   .news .block-news__content {
-    grid-column: 2; }
+    grid-column: 2;
+    padding-left: 18px;
+    border-left: 1px solid #DADADA; }
+    .news .block-news__content > h2, .news .block-news__content > .h2 {
+      font-size: 24px;
+      color: #333333; }
+    .news .block-news__content > p {
+      font-size: 12px;
+      word-spacing: 0;
+      line-height: 16px; }
+  .news .block-news__link {
+    text-align: end;
+    padding: 9px 5px; }
+    .news .block-news__link > span {
+      padding: 4px 10px;
+      background-color: #333333; }
+      .news .block-news__link > span:hover {
+        background-color: #6E9BCA; }
+      .news .block-news__link > span > a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none; }
+
+@media (max-width: 1400px) {
+  .view-filters .form--inline {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.clients {
+  margin: 27px auto 157px; }
+  .clients .swiper-container {
+    margin-top: 77px; }
+  .clients .swiper-wrapper {
+    gap: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .clients .swiper-wrapper .swiper-slide {
+      max-width: 150px; }
+
+footer {
+  padding: 85px 0 60px; }
+  footer .region-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 html, body {
   font-family: 'Open Sans', sans-serif; }

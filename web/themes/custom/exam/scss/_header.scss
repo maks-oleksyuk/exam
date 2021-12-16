@@ -24,31 +24,22 @@ header {
       padding: 30px 38px;
       text-align: center;
       background-color: #333333;
-
-      .navbar-brand {
-        margin: 0;
-        padding: 0;
-
-        a.site-title {
-          font-size: 28px;
-          font-family: "Nexa Slab";
-          text-transform: capitalize;
-          color: #6e9bca;
-        }
-
-        .site-slogan {
-          margin-top: -11px;
-          font-size: 15px;
-          color: #cac9cd;
-        }
-      }
+      @extend %site_branding;
     }
 
     &-nav-main {
+      flex-grow: 1;
       display: flex;
 
-      > nav {
+      .block-menu {
         display: flex;
+      }
+
+      > nav {
+        flex-grow: 1;
+        display: flex;
+        text-transform: uppercase;
+        justify-content: space-around;
       }
 
       .navbar-nav li:first-child a {
@@ -68,6 +59,7 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
 
         &:hover {
           color: #6E9BCA;
@@ -84,23 +76,7 @@ header {
       display: flex;
       align-items: center;
       gap: 28px;
-
-      .social-media-links--platforms {
-        display: flex;
-        font-size: 9px;
-        gap: 11px;
-        margin: 0;
-
-        > li {
-          width: 25px;
-          height: 25px;
-          background-color: #6E9BCA;
-
-          > a {
-            color: #fff;
-          }
-        }
-      }
+      @extend %social_link;
     }
   }
 
@@ -189,7 +165,24 @@ header {
   }
 }
 
-.region-content {
-  //padding: 0;
-}
+@include media-breakpoint-down(md) {
+  header {
+    min-height: auto;
+  }
+  .header-banner {
+    padding: 0 40px;
+    margin-top: 80px;
 
+    &__title-primary {
+      font-size: 44px;
+    }
+
+    &__title-secondary {
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 13px;
+    }
+  }
+}
