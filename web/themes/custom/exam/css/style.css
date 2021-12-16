@@ -10348,7 +10348,7 @@ header {
         -ms-flex-align: center;
             align-items: center;
     gap: 28px; }
-  .navbar #block-exposed-form-search-api-page-1 {
+  .navbar #views-exposed-form-search-page-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10356,21 +10356,21 @@ header {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 30px; }
-    .navbar #block-exposed-form-search-api-page-1 .form--inline {
+    .navbar #views-exposed-form-search-page-1 .form--inline {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-    .navbar #block-exposed-form-search-api-page-1 .form-item {
+    .navbar #views-exposed-form-search-page-1 .form-item {
       max-width: 170px;
       margin-right: 0; }
-      .navbar #block-exposed-form-search-api-page-1 .form-item .form-control {
+      .navbar #views-exposed-form-search-page-1 .form-item .form-control {
         border-radius: 0;
         border-color: #ccc; }
-        .navbar #block-exposed-form-search-api-page-1 .form-item .form-control:focus {
+        .navbar #views-exposed-form-search-page-1 .form-item .form-control:focus {
           -webkit-box-shadow: none;
                   box-shadow: none;
           border-color: #6E9BCA; }
-    .navbar #block-exposed-form-search-api-page-1 .form-submit {
+    .navbar #views-exposed-form-search-page-1 .form-submit {
       margin: 0;
       border-radius: 0;
       border-color: #ccc;
@@ -10380,7 +10380,7 @@ header {
       background-position: center;
       background-repeat: no-repeat;
       background-image: url("../images/search.svg"); }
-      .navbar #block-exposed-form-search-api-page-1 .form-submit:focus {
+      .navbar #views-exposed-form-search-page-1 .form-submit:focus {
         -webkit-box-shadow: none;
                 box-shadow: none;
         border-color: inherit; }
